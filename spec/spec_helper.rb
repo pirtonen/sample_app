@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'spork'
-#require 'minitest/autorun'
+require 'minitest/autorun'
+#require 'rspec/autoran'
  
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
@@ -12,7 +13,7 @@ Spork.prefork do
   ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
-  require 'rspec/autorun'
+#  require 'rspec/autorun'
   
   # Requires supporting ruby files with custom matches and macros, etc.
   # in spec/support/ and its subdirectories
